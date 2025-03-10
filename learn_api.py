@@ -14,8 +14,7 @@ class SHotelAtr:
             self,
             location: str,
             date_in: date,
-            date_out: date,
-            stars: Optional[int] = Query(None, ge=1, le=5),
+            date_out: date,         stars: Optional[int] = Query(None, ge=1, le=5),
             has_spa: Optional[bool] = None
             ):
             self.location = location
